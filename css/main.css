@@ -1,0 +1,132 @@
+.sec_01 {
+	background-image: url(../img/mainbg.jpg);
+	background-size: cover;
+}
+.sec_01:after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0px -60px 90px #f5f5f5;
+}
+.sec_01 .content_container {
+	background-color: rgba(0,0,0,0.2);
+	position: relative;
+}
+.logo {
+	position: absolute;
+	z-index: 1;
+	margin: -125px 0 0 -125px;
+	top: 50%;
+	left: 50%;
+}
+.logo img {
+	display: block;
+	width: 250px;
+	height: 250px;
+	opacity: 0.8;
+}
+.next_arrow {
+	position: absolute;
+	z-index: 2;
+	bottom: 15%;
+	left: 50%;
+	margin-left: -25px;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/next.png);
+	background-size: 100%;
+	animation: moveArrow 1s ease infinite;
+}
+.mainText {
+	position: absolute;
+	bottom: 30%;
+	text-align: center;
+	width: 100%;
+	font-size: 1em;
+	color: #fff;
+}
+/*MAINCSS_END*/
+
+.profile_title {
+	padding-bottom: 5%;
+	font-weight: 700;
+}
+
+.about_me {
+	float: left;
+	width: 60%;
+}
+.profile_img {
+	float: left;
+	width: 30%;
+}
+.profile_img img {
+	width: 100%;
+}
+.profile_infoWrap {
+	float: left;
+	padding: 5% 5%;
+	width: 70%;
+}
+
+.info_name {
+	padding-bottom: 0;
+	font-size: 18px;
+}
+.info_part {
+	padding-bottom: 5%;
+	font-size: 14px;
+	color: #343434;
+}
+.education {
+	padding: 5% 0;
+	width: 100%;
+}
+
+.period {
+	display: block;
+	padding-top: 2%;
+	width: 50%;
+	text-align: center;
+	opacity: 0.7;
+}
+.skillWrap {
+	float: right;
+	width: 40%;
+}
+.skill {
+	padding: 5% 0;
+}
+
+.prgressBar {
+	width: 100%;
+}
+
+.barWrap {
+	position: relative;
+	margin: 2% 0;
+	width: 100%;
+	height: 4px;
+	background-color: #ddd;
+}
+
+.barWrap span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: red;
+}
+
+.barMove {
+	transition: width 1s;
+}
+
+@keyframes moveArrow {
+	0% {bottom: 15%;}
+	50% {bottom: 13%;}
+	100% {bottom: 15%;}
+}
